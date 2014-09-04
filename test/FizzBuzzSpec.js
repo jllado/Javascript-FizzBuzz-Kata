@@ -16,15 +16,19 @@ describe("Play FizzBuzz", function() {
         expect(Fizzbuzz.play(2)).toBe(2);
     });
 
-    it("should return 3 when play Fizz", function() {
+    it("should return Fizz when play 3", function() {
         expect(Fizzbuzz.play(3)).toBe("Fizz");
     });
 
-    it("should return 5 when play Buzz", function() {
+    it("should return Buzz when play 5", function() {
         expect(Fizzbuzz.play(5)).toBe("Buzz");
     });
 
-    it("should return 6 when play Fizz", function() {
+    it("should return Fizz when play 6", function() {
         expect(Fizzbuzz.play(6)).toBe("Fizz");
+    });
+
+    it("should return FizzBuzz when play Fizz", function() {
+        expect(Fizzbuzz.play(15)).toBe("FizzBuzz");
     });
 });

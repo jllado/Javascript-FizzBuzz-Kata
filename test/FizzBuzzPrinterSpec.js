@@ -7,14 +7,6 @@
 // 0 -> []
 
 describe("Print FizzBuzzPrinter", function () {
-    var FizzBuzzPrinter = {};
-    FizzBuzzPrinter.print = function (number) {
-        var i, result = [];
-        for(i = 1; i <= number; i += 1) {
-            result.push(Fizzbuzz.play(i));
-        }
-        return result;
-    }
 
     it("should return [1] when print 1", function () {
         expect(FizzBuzzPrinter.print(1)).toEqual([1]);
@@ -30,6 +22,10 @@ describe("Print FizzBuzzPrinter", function () {
 
     it("should return [1, 2, Fizz, 4, Buzz, Fizz] when print 6", function () {
         expect(FizzBuzzPrinter.print(6)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz"]);
+    });
+
+    it("should contains FizzBuzz when print 15", function () {
+        expect(FizzBuzzPrinter.print(15)).toContain("FizzBuzz");
     });
 
     it("should return [] when print 0", function () {

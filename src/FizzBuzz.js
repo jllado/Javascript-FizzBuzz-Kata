@@ -5,6 +5,9 @@ Fizzbuzz = function () {
 
     function play(number) {
 
+        if (number.isDivisibleBy(FIZZ_NUMBER) && number.isDivisibleBy(BUZZ_NUMBER)) {
+            return "FizzBuzz";
+        }
         if (number.isDivisibleBy(FIZZ_NUMBER)) {
             return "Fizz";
         }
