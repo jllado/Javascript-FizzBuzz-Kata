@@ -1,23 +1,13 @@
-var Fizzbuzz;
-Fizzbuzz = function () {
-    var FIZZ_NUMBER = 3;
-    var BUZZ_NUMBER = 5;
+function FizzBuzz(rules) {
+    this.rules = rules;
 
-    function play(number) {
-
-        if (number.isDivisibleBy(FIZZ_NUMBER) && number.isDivisibleBy(BUZZ_NUMBER)) {
-            return "FizzBuzz";
-        }
-        if (number.isDivisibleBy(FIZZ_NUMBER)) {
-            return "Fizz";
-        }
-        if (number.isDivisibleBy(BUZZ_NUMBER)) {
-            return "Buzz";
-        }
-        return number;
-    };
-
-    return {
-        play: play
-    };
-}();
+    this.play = function (number) {
+        var result = "";
+        _.each(this.rules, function (rule) {
+            if (result === "" && rule.check(number)) {
+                result = rule.action(number);
+            }
+        });
+        return result || number;
+    }
+}

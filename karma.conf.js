@@ -15,8 +15,15 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'node_modules/underscore/underscore.js',
+      'src/Base.js',
+      'src/Rule.js',
+      'src/FizzRule.js',
+      'src/BuzzRule.js',
+      'src/FizzBuzzRule.js',
+      'src/FizzBuzz.js',
+      'src/FizzBuzzPrinter.js',
       'test/*Spec.js',
-      'src/*.js'
     ],
 
 
@@ -51,7 +58,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
 
 
     // start these browsers
