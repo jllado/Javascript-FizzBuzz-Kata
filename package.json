@@ -1,0 +1,14 @@
+{ "name": "fizzbuzz_kata"
+    , "description": "FizzBuzz Kata."
+    , "version": "1.1.0"
+    , "author": "Juan Llado <jllado@gmail.com>"
+    , "repository": { "type": "git", "url": "https://github.com/jllado/Javascript-FizzBuzz-Kata.git" }
+    , "main": "./src/FizzBuzzGenerator.js"
+    , "engines": { "node": ">= 0.6.0 && < 0.13.0" }
+    , "dependencies": {
+        "underscore": "1.7.0"
+    }
+    , "devDependencies": {
+        "jasmine": "2.0.1"
+    }
+}
