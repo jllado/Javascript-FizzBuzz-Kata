@@ -16,13 +16,13 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'node_modules/underscore/underscore.js',
-      'src/Base.js',
+      'src/FizzBuzzNumber.js',
       'src/Rule.js',
       'src/FizzRule.js',
       'src/BuzzRule.js',
       'src/FizzBuzzRule.js',
       'src/FizzBuzz.js',
-      'src/FizzBuzzPrinter.js',
+      'src/*.js',
       'test/*Spec.js',
     ],
 

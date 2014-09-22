@@ -4,7 +4,7 @@ function FizzBuzz(rules) {
     this.play = function (number) {
         var result = "";
         _.each(this.rules, function (rule) {
-            if (result === "" && rule.check(number)) {
+            if (result === "" && rule.check(new FizzBuzzNumber(number))) {
                 result = rule.action(number);
             }
         });
